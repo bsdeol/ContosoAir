@@ -2,8 +2,8 @@
 # Initially created on: 07/14/22
 
 pool:
-  vmImage: 'ubuntu-16.04'
-trigger:
+  vmImage: 'ubuntu-latest'
+  trigger:
   - master
 steps:
   - task: CopyFiles@2
