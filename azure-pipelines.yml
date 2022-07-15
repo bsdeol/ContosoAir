@@ -18,6 +18,22 @@ steps:
       command: custom
       verbose: false
       customCommand: 'install --production'
+  - script: |
+      npm install 
+      npm test 
+    displayName: 'Run unit tests'
+    continueOnError: true
+  - task: PublishTestResults@2
+    displayName: 'Publish Code Coverage'
+    inputs:
+      testResultsFiles: $(System.DefaultWorkingDirectory)/test-report.xml
+  - task: PublishTestResults@1
+    displayName: 'Publish Test Results'
+    condition: 'in(variables["Agent.JobStatue"], "Succeeded"'
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: $(System.DefaultWorkingDirectory)/coverage/*coverage.xml
+      reportDirectory: $(System.DefaultWorkingDirectory)/coverage
   - task: ArchiveFiles@2
     displayName: 'Archive $(Build.SourcesDirectory)'
     inputs:
