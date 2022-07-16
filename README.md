@@ -1,3 +1,4 @@
+[![Board Status](https://dev.azure.com/barrysingh/a93c0d9b-7d72-492e-97f6-9cce7cb9c134/d9c8416a-d6f2-4a15-82d8-76dc3d156d3d/_apis/work/boardbadge/35530aeb-be6a-4725-a9f5-d9f37a938d9b)](https://dev.azure.com/barrysingh/a93c0d9b-7d72-492e-97f6-9cce7cb9c134/_boards/board/t/d9c8416a-d6f2-4a15-82d8-76dc3d156d3d/Microsoft.RequirementCategory)
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 [![Build Status](https://dev.azure.com/barrysingh/BSD_Project1/_apis/build/status/bsdeol.ContosoAir?branchName=master)](https://dev.azure.com/barrysingh/BSD_Project1/_build/latest?definitionId=3&branchName=master)
 
